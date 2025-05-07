@@ -28,7 +28,7 @@
 		
 		// STEP 3: Assign a click event listener to the above element, and include a reference to the function to be invoked
 
-        element.addEventListener('click', updateName);
+        //element.addEventListener('click', updateName);
 		
 		// STEP 4: Creat a function that waits for the above click event
 
