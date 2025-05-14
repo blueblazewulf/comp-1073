@@ -12,15 +12,21 @@
     <script>
         /* STEP 1: Number types (integer, float, and double)
         declare and initialize an integer and a float, then in the console, reveal the number type with typeof(varName) */
-        
+        let output = document.querySelector('p');
         // Note - there are also different number systems: binary, octal, and hexadecimal
-
+        let myInt = 10;
+        let myFloat = 5.6;
+        let typeTest = typeof(myFloat);
         /* STEP 2: Arithmetic operators
         + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo), ** (exponent) */
-
+        let step2a = 5%3;
+        output.textContent = step2a;
 
         // Try declaring and initializing a couple of variables as numbers
-
+        let num1 = 90;
+        let num2 = 50;
+        let step2b = (90+50)*5;
+        output.textContent = step2b
 
         /* OR… num1 * num2 / 8 + 2 - 0.5; */
 
@@ -32,19 +38,28 @@
 
         /* STEP 3: Increment and decrement operators
         ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
+        let step3a = 3;
+        let preincrement = ++step3a;//increment first then assign 
+        console.log(++step3a);
 
+        let postincrement = step3a++;
+        console.log(postincrement);
 
         // Note 1 - you cannot increment/decrement a number directly
         // Note 2 - typing num++ or num-- in the console will output the number before incrementing or decrmenting - try ++num or --num, instead
 
         /* STEP 4: Assignment Operators
         = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
-
+        let step4a = 5;
+        step4a /= 2;
+        output.textContent = step4a;
 
         /* STEP 5: Comparison Operators
         ===	(strict equality), !==	(strict-non-equality), == (equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
-
-
+        let a = 2;
+        let c = '2';
+        console.log(a==c);
+        console.log(a===c);
     </script>
 </body>
 </html>
