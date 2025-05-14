@@ -50,7 +50,7 @@
                     lowOrHi.textContent = '';
                     gameOver();
 
-                }else if(userGuess === 10){	
+                }else if(guessCount === 10){	
 					
 				// STEP 3f: Conditional - the user is all out of guesses
                     lastResult.textContent = 'You are out of guesses';
@@ -65,10 +65,11 @@
 					
 					
 					// If the guess is too low, let the user know
-					if(userGuess < randomNumber){
-                        lowOrHi.textContent = 'Too low'
-                    }
-					
+					    if (userGuess < randomNumber) {
+                         lowOrHi.textContent = 'Too low';
+                        }else{
+                        lowOrHi.textContent = 'Too high';
+                        }
 					// Else if the guess is too high, let the user know
 					
 					
@@ -78,6 +79,7 @@
                 guessField.value = '';
                 guessField.focus();
             }
+        }
 			// STEP 4: Build a function called gameOver() to end the game
 			function gameOver(){
 				// STEP 4a: Disable the guessing field and submit button
