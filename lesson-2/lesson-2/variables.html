@@ -13,29 +13,58 @@
 		/* STEP 1: Declare variables
 		Use a-z, 0-9, A-Z and underscores, avoiding reserved names
 		All program variables are generally declared at the beginning */
-
+		let myName;
+		let myAge;
+		let string;
+		let para = document.querySelector('body p');
 
 		/* STEP 2: Initialize variables
 		Don't confuse a variable with no value with one that doesn't exist at all */
-
+		myName = "john gilmour";
+		myAge = 30;
 
 		/* STEP 3: Updating variables
 		Once a variable has been declared, this can be done any time */
-
+		myName = "John Gilmour";
+		myAge = 31;
+		string = myName + ' ' + myAge
+		para.textContent = string;
 
 		// STEP 4: Variable types (use typeof in the console)
 		// Numbers
-
+		let numCourse = 6;
+		para.textContent = numCourse;
 		// Strings (use '' or "")
-
+		let stringCourse = 'client side js';
+		para.textContent = stringCourse;
 		// Booleans
-
+		let iamAlive = true;
+		let compare = 6>3;
+		console.log('the result of the comparison is', + compare);
 		// Arrays
-		
-		// Objects
+		let myArrays = ['sarah', 'steve', 'melissa'];
+		para.textContent = myArrays[1];
 
+		let myArrays2 = [20,30,50];
+		para.textContent = myArrays2[0];
+		// Objects
+		let dog = {
+			fName : 'simba',
+			breed : 'staffymix',
+			color: 'brown'
+		}
+		para.textContent = dog.fName;
+		console.log(typeof(dog));
 		// STEP 5: Typing (JavaScript is a loosely-typed language)
 
+		let x = 10;
+		console.log(x);
+		
+		x = 'hello';
+		console.log(x);
+
+		x = true;
+		console.log(x);
 
 	</script>
 </body>
