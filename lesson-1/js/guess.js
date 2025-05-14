@@ -12,13 +12,16 @@
 
 			// STEP 1c: Create variables to represent the guessing form
 
+            let guessField = document.querySelector('input#guessField')
+            let guessSubmit = document.querySelector('button')
 
 			// STEP 1d: Create variables to initialize counter for number of guesses
 			
-
+            let guessCount = 1;
 
 			// STEP 2: Put focus on the field that allows user to type in guesses
 			
+            guessField.focus();
 
 			// STEP 3: Build a function to check the user's guess
 			
