@@ -14,24 +14,35 @@
     const output = document.querySelector('p');
     
     /* STEP 1: Creating Strings */
-
+    let step1a = 'this "is" a string';
+    console.log(step1a);
+    let step1b = 'this is a string';
+    console.log(step1b);
     
     // Note - whether you use 'single' or "double" quotes is a personal preference - try to be consistent
 
     /* STEP 2: Escaping Characters */
-
+    let step2 = 'it\'s six o\'clock';
+    console.log(step2);
 
     /* STEP 3: Concatenation */
-
+    let step3a = 'javascript';
+    let step3b = 'rocks';
+    output.textContent = step3a + ' ' + step3b;
 
     /* STEP 4: Numbers and Strings */
 
     // numbers can be converted to strings
-
+    let step4a = 'faranheit' + 543;
+    output.textContent = step4a + ' ' + typeof(step4a);
+    let step4b = '20' + '20';
+    output.textContent = step4b + ' ' + typeof(step4b);
     // strings can be converted to numbers, too
-
+    let step4c = Number(step4b);
+    output.textContent = step4c + ' ' + typeof(step4c);
     // and back again, if we want
-
+    let step4d = step4c.toString();
+    console.log(step4d);
 
 </script>
 </html>
