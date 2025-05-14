@@ -43,32 +43,36 @@
 				guesses.textContent += userGuess + '';
 
 				// STEP 3e: Conditional - the user guessed correctly
-				
+				if(userGuess === randomNumber){
 					// Output a success message, then end the game
-					
-					
-					
+					lastResult.textContent = 'You guessed the number';
+					lastResult.style.backgroundcolor = 'green';
+                    lowOrHi.textContent = '';
+                }else if(userGuess === 10){	
 					
 				// STEP 3f: Conditional - the user is all out of guesses
-				
+                    lastResult.textContent = 'You are out of guesses';
 					// Output an appropriate message, then end the game
-					
+                }else{	
 					
 				// STEP 3g: Conditional - the user's guess is incorrect
-				
+                        lastResult.textContent = 'wrong';
+                        lastResult.style.backgroundcolor = 'red';
 					// Output an appropriate message
 					
 					
 					// If the guess is too low, let the user know
-					
+					if(userGuess <)
 					
 					// Else if the guess is too high, let the user know
 					
 					
 				
 				// STEP 3h: Increment the guess count, move focus to the guess field for the next guess, and clear out the old input
-				
-				
+				guessCount ++;
+                guessField.value = '';
+                guessField.focus();
+            }
 			// STEP 4: Build a function called gameOver() to end the game
 			
 				// STEP 4a: Disable the guessing field and submit button
@@ -78,5 +82,5 @@
 				
 			
 			// STEP 3a: Add an event listener for the guess form button that calls the checkGuess function, then test that the event listener is working and that it invokes the function
-			
+			guessSubmit.addEventListener('click', checkGuess)
 			// This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash
