@@ -25,15 +25,23 @@
 
 			// STEP 3: Build a function to check the user's guess
 			
+            function checkGuess(){
+
 				// STEP 3b: Create a variable to contain what number the user entered
 				
+                let userGuess = Number(guessField.value);
+
 				// STEP 3c: If this is the first guess, add some text to the screen as a label for listing previous guesses for reference
 				
-				
+                if(guessCount === 1){
+                   guesses.textContent = 'Previous Guesses: ';
+                }
+            
 				
 				// STEP 3d: Add the user's current guess to that list, plus a space
 				
-				
+				guesses.textContent += userGuess + '';
+
 				// STEP 3e: Conditional - the user guessed correctly
 				
 					// Output a success message, then end the game
