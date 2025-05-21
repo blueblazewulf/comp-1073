@@ -51,6 +51,12 @@ const powersList = [
 
 // Function to generate a random character description
 
+function generateCharacterDescription() {
+    const powers = specialPowers.join(", ");
+    const heroStatus = isSuperhero ? "a superhero" : "just a regular person";
+    const description = `Meet ${characterName}, a ${age}-year-old ${heroStatus} who loves ${favoriteFood} and can ${powers}!`;
+    document.getElementById("characterDescription").innerText = description;
+}
 
 // Functions to update character's age
 
