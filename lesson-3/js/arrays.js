@@ -43,16 +43,22 @@ output.textContent = myArray[2];
 // An array within an array is called a multidimensional array - it can be accessed by specifying the index of the first array, then the item within it
 /* STEP 3: Determining array length
 Being able to figure out how many elements are contained in an array is a critical feature of JavaScript programming */
-
+output.textContent = myArray.length;
 // In particular, looping through arrays
-
+for(let i=0; i<myArray.length;i++){
+    console.log(myArray[i]);
+    output.textContent += ', '+ myArray[i];
+}
 /* STEP 4: Convert a string to an array
 If there is a common character that can act as a delimiter in a string, we can use this character to create an array */
-
+let orgFive = 'Toronto Maple Leafs, Chicago Black Hawks, Detroit Red Wings, Boston Bruins, Montreal Canadians';
+console.log(orgFive);
+let orgFiveArray = orgFive.split(', ');
+console.log(orgFiveArray);
 // Output one of the array items
-
+console.log(orgFiveArray[2]);
 // Output the last element of the array
-
+output.textContent = orgFiveArray[orgFiveArray.length-1];
 /* STEP 5: Convert an array back to a string
 Use join() and toString() - note that join() allows you to choose and insert a delimiter, while toString() does not */
 
