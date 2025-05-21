@@ -40,6 +40,15 @@ let isSuperhero = true; // boolean
 let specialPowers = ["Mind reading", "Super speed"]; // array
 let favoriteFood = "pizza"; // string
 
+// Arrays for randomness
+const nameList = ["Money Magician", "Sir Super", "Lady Luck", "Dr. Dastardly", "Nuclear Noodle"];
+const foodList = ["tacos", "ice cream", "pizza", "hot dogs", "steak"];
+const powersList = [
+    ["flight", "turn invisible", "teleport short distances"],
+    ["super strength", "transform into a dragon", "summon storms"],
+    ["nuclear punches", "control bugs", "painful pranks"]
+];
+
 // Function to generate a random character description
 
 
