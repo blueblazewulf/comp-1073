@@ -25,7 +25,7 @@ console.log(even);
 
 //array holes
 let arr3 = [];
-arr[5] = "hello";
+arr3[5] = "hello";
 console.log(arr3.length);
 
 /* STEP 1: Creating an array
@@ -61,20 +61,31 @@ console.log(orgFiveArray[2]);
 output.textContent = orgFiveArray[orgFiveArray.length-1];
 /* STEP 5: Convert an array back to a string
 Use join() and toString() - note that join() allows you to choose and insert a delimiter, while toString() does not */
+orgFiveString = orgFiveArray.join('-');
+output.textContent = orgFiveString;
+console.log(orgFiveString);
 
+orgFiveString2 = orgFiveArray.toString();
+output.textContent = orgFiveString2;
+console.log(orgFiveString2);
 /* STEP 6: Adding and removing items from an array
 Without the ability to edit the contents of an array, this type of variable would have limited use - but adding and removing array items is pretty straightforward */
-
+let orgSevenLength = orgFiveArray.push('Network Tangers', 'Philadelphia Flyers');
+output.textContent = orgSevenLength;
 // Adding one or more items to an array with push()
-
+output.textContent = orgSevenLength + 'items and they are' + orgFiveArray;
 // If you would like to capture how many elements are in the array after you have edited it, then…
 
 // Removing an item from an array with pop()
-
+output.textContent = orgFiveArray.pop();
 // pop() returns the item that was removed, rather than the length of the updated array, so…
 
 // To do the same thing, that is, to add and remove an item from the beginning of the array, use shift() and unshift()
+orgSevenLength = orgFiveArray.unshift('Buffalo Sabres'); 
+output.textContent = orgFiveArray;
 
+orgSevenLength = orgFiveArray.shift('Buffalo Sabres'); 
+output.textContent = orgFiveArray;
 // We can also modify the array contents by deleting or substituting elements, or inserting one or more elements at a certain place with splice()
 
 /* That's it for the basics of working with arrays! With these tools at your disposal, a whole new world of possibilities with JavaScript are at your command */
