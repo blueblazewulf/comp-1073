@@ -34,7 +34,11 @@ display the character's attributes in a creative and humorous way.
 
 // Declare and initialize variables
 
-
+let characterName = "Money Magician"; // string
+let age = Math.floor(Math.random() * 100) + 1; // number
+let isSuperhero = true; // boolean
+let specialPowers = ["Mind reading", "Super speed"]; // array
+let favoriteFood = "pizza"; // string
 
 // Function to generate a random character description
 
