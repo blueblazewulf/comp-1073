@@ -37,16 +37,17 @@ display the character's attributes in a creative and humorous way.
 let characterName = "Money Magician"; // string
 let age = Math.floor(Math.random() * 100) + 1; // number
 let isSuperhero = true; // boolean
-let specialPowers = ["Mind reading", "Super speed"]; // array
+let specialPowers = ["read minds", "run at super speed", "explode minds" ]; // array
 let favoriteFood = "pizza"; // string
 
 // Arrays for randomness
 const nameList = ["Money Magician", "Sir Super", "Lady Luck", "Dr. Dastardly", "Nuclear Noodle"];
 const foodList = ["tacos", "ice cream", "pizza", "hot dogs", "steak"];
 const powersList = [
-    ["flight", "turn invisible", "teleport short distances"],
-    ["super strength", "transform into a dragon", "summon storms"],
-    ["nuclear punches", "control bugs", "painful pranks"]
+    ["fly", "turn invisible", "teleport short distances"],
+    ["lift a building", "transform into a dragon", "summon storms"],
+    ["do nuclear punches", "control bugs", "do painful pranks"],
+    ["read minds", "run at super speed", "explode minds" ]
 ];
 
 // Function to generate a random character description
@@ -73,7 +74,20 @@ function decreaseAge() {
 }
 
 // Function to update the character's description after changing age
-
+// Already done in the previous comment
 
 // Add event listeners for buttons using querySelector
+document.querySelector("#generateButton").addEventListener("click", () => {
+    characterName = nameList[Math.floor(Math.random() * nameList.length)];
+    age = Math.floor(Math.random() * 100) + 1;
+    isSuperhero = Math.random() < 0.5;
+    favoriteFood = foodList[Math.floor(Math.random() * foodList.length)];
+    specialPowers = powersList[Math.floor(Math.random() * powersList.length)];
+    generateCharacterDescription();
+});
 
+document.querySelector("#increaseAgeButton").addEventListener("click", increaseAge);
+document.querySelector("#decreaseAgeButton").addEventListener("click", decreaseAge);
+
+// Show the default character as soon as the page loads
+generateCharacterDescription();
