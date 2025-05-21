@@ -30,12 +30,16 @@ console.log(arr3.length);
 
 /* STEP 1: Creating an array
 When declaring and initializing an array, you can include strings, numbers, booleans, and even other arrays */
+let myArray = ['string', 25, true, [10,20,30]];
+output.textContent = myArray;
 
 /* STEP 2: Reading and changing array elements
 You can refer to a particular element in an array with it's index number */
-
+output.textContent = myArray[2];
+output.textContent = myArray[3][1];
 // You can also change a particular element
-
+myArray[2]= false;
+output.textContent = myArray[2];
 // An array within an array is called a multidimensional array - it can be accessed by specifying the index of the first array, then the item within it
 /* STEP 3: Determining array length
 Being able to figure out how many elements are contained in an array is a critical feature of JavaScript programming */
