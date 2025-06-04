@@ -70,8 +70,11 @@ function result() {
 
 		// STEP 12a: Create a variable called temp and convert °F to °C ... the formula for conversion is °C = (°F - 32) x 5/9
 
+	const tempInC = Math.round((94 - 32) * 5 / 9) + ' centigrade';
+
 		// STEP 12b: Replace the string '94 fahrenheit' with the updated temperature in °C
 
+	newStory = newStory.replace('94 fahrenheit', tempInC);
   }
 	/* STEP 13: Make the textContent property of the story variable (which references the paragraph) equal to newStory */
 
