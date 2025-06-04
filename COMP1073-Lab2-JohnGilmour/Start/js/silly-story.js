@@ -37,6 +37,8 @@ function randomValueFromArray(array){
 function result() {
 	// STEP 7: Create a new variable called newStory and set it to the value of storyText - we don't want to overwrite the original story!
 
+	let newStory = storyText;
+
 	/* STEP 8: Use the randomValueFromArray() function to generate a value for each of three new variables - xItem, yItem, and zItem
 	Call up the function and for each variable, pass it the array from which to grab a random string - for example if insertW was an array of strings, I would type:
 	var wItem = randomValueFromArray(insertW);
