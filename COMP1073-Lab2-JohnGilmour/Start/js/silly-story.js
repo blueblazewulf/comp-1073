@@ -14,6 +14,8 @@ const story = document.querySelector('.story');
 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
 */
 
+var storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+
 /* STEP 4: Create three arrays, insertX, insertY, and insertZ, assigning them the following array values respectively:
 Donald Trump, Jackie Chan, Santa Claus
 Area 51, Death Valley, Aruba
