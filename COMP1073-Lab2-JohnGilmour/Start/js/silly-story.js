@@ -22,6 +22,10 @@ Area 51, Death Valley, Aruba
 spontaneously combusted, rapidly sublimated, evaporated instantly
 */
 
+const insertX = ['Donald Trump', 'Jackie Chan', 'Santa Claus'];
+const insertY = ['Area 51', 'Death Valley', 'Aruba'];
+const insertZ = ['spontaneously combusted', 'rapidly sublimated', 'evaporated instantly'];
+
 // FUNCTIONS
 
 /* STEP 2: have a look at the following function - if you call this function and pass it an array, it will return one of the elements of that array randomly */
