@@ -9,3 +9,12 @@ const wordSets = [
 
 // An array to track the current choice for each category
 let choices = Array(5).fill(0);
+
+// Function to cycle through options in each word set
+function cycle(index) {
+  // Go to the next option in the list
+  choices[index] = (choices[index] + 1) % wordSets[index].length;
+
+  // Update the text beside the button
+  document.getElementById("choice" + index).textContent = wordSets[index][choices[index]];
+}
