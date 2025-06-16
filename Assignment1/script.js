@@ -18,3 +18,9 @@ function cycle(index) {
   // Update the text beside the button
   document.getElementById("choice" + index).textContent = wordSets[index][choices[index]];
 }
+
+// Combine the selected words into a full sentence
+function showStory() {
+  const story = choices.map((val, i) => wordSets[i][val]).join(" ");
+  document.getElementById("story").textContent = "Your Story: " + story + ".";
+}
