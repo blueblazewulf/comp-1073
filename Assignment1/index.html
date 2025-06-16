@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <!-- main heading -->
+    <h1>See 'N' Say Storymaker</h1>
+
+    <!-- story selection buttons -->
+    <div class="buttons">
+    <!-- Each button cycles through options and shows the chosen word/phrase -->
+        <button onclick="cycle(0)">1. Subject: <span id="choice0">--</span></button>
+        <button onclick="cycle(1)">2. Verb: <span id="choice1">--</span></button>
+        <button onclick="cycle(2)">3. Adjective: <span id="choice2">--</span></button>
+        <button onclick="cycle(3)">4. Noun: <span id="choice3">--</span></button>
+        <button onclick="cycle(4)">5. Location: <span id="choice4">--</span></button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
