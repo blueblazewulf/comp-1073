@@ -21,6 +21,22 @@
         <button onclick="cycle(3)">4. Noun: <span id="choice3">--</span></button>
         <button onclick="cycle(4)">5. Location: <span id="choice4">--</span></button>
     </div>
+    
+    <!-- Final actions for the story reader -->
+    <div class="actions">
+        <!-- Shows the completed story -->
+        <button onclick="showStory()">Show Story</button>
+
+        <!-- Randomly selects one word from each category -->
+        <button onclick="randomStory()">Random</button>
+
+        <!-- Resets selections to start over -->
+        <button onclick="resetStory()">Reset</button>
+    </div>
+
+    <!-- Placeholder for the story output -->
+    <div id="story"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
