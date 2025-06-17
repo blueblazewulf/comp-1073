@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
         htmlElement.style.backgroundColor = rgbColor;
     }
 
+    // Event listeners
+    redSlider.addEventListener('input', updateBackgroundColor);
+    greenSlider.addEventListener('input', updateBackgroundColor);
+    blueSlider.addEventListener('input', updateBackgroundColor);
+
+    // Set the initial color
+    updateBackgroundColor();
+});   
