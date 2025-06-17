@@ -6,4 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const blueSlider = document.getElementById('blue');
     const htmlElement = document.querySelector('html');
 
-   
+    // The function to update the background colour
+    function updateBackgroundColor() {
+        const red = parseInt(redSlider.value);
+        const green = parseInt(greenSlider.value);
+        const blue = parseInt(blueSlider.value);
+
+        const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+        htmlElement.style.backgroundColor = rgbColor;
+    }
+
