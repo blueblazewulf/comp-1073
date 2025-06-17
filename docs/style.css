@@ -1,0 +1,49 @@
+/* base styling to the whole page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffd82b; /* Soft pastel background */
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+/* Styles the heading */
+h1 {
+  font-size: 2.2rem;
+  color: #005a9c;
+  margin-bottom: 2rem;
+}
+
+/* Styles the button container */
+.buttons, .actions {
+  margin: 1.5rem auto;
+  max-width: 400px;
+}
+
+/* Styles all buttons */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: #0f92e4;
+  border: 2px solid #022dea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: #1eb12f;
+}
+
+/* Styles the story output area */
+#story {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c2330f;
+}
